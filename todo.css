@@ -160,13 +160,9 @@ ul.list li{
     margin-top: -45px;
     line-height: 100px;
     opacity: 0.9;
-    overflow-x: scroll;
-    overflow-y: hidden;
+/*     overflow-x: scroll; */
+/*     overflow-y: hidden; */
 }
-.ul.list li::-webkit-scrollbar {
-  display: none;
-}
-
 @keyframes rainbow_animation {
     0%,100% {
         background-position: 0 0;
