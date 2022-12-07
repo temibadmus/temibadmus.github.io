@@ -163,6 +163,10 @@ ul.list li{
     overflow-x: scroll;
     overflow-y: hidden;
 }
+.ul.list li::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes rainbow_animation {
     0%,100% {
         background-position: 0 0;
