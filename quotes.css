@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body{
+    background: #000000;
+}
+.bg{
+    background-image: url('quotes_media/steve.jpeg');
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 100%;
+    position:fixed;
+    /* overflow: hidden; */
+    z-index: -10;
+}
+.title{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Montserrat";
+    position: relative;
+    top: 0px;
+    text-align: center;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.436);
+    margin: auto;
+    /* max-width:80%; */
+}
+.left_border{
+    background-color: rgba(255, 255, 255, 0.436);
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 100%;
+    z-index: -9;
+}
+.right_border{
+    background-color: rgba(255, 255, 255, 0.436);
+    position: relative;
+    float: right;
+    width: 10%;
+    min-height: 100%;
+    z-index: -9;
+}
+.quote{
+    font-size: 40px;
+    font-weight: lighter;
+    background-color: rgba(187, 219, 255, 0.9);
+    font-family: "Montserrat";
+    border: 8px solid rgb(0, 0, 0);
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 30%;
+    left: 30%;
+    transform: translateX(-50%);
+    max-width:60%;
+}
+
+.generateQ{
+    font-size: 40px;
+    font-weight: lighter;
+    background-color: rgba(187, 219, 255, 0.9);
+    font-family: "Montserrat";
+    border: 5px solid black;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+.generateQ:hover{
+    filter: invert(100%) brightness(0.5) sepia(100%) hue-rotate(100deg);
+}
+.shakesQ{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Montserrat";
+    position: relative;
+    z-index: 0;
+    background: white;
+    color: rgb(13, 14, 14);
+    border-radius: 10px;
+    border: solid;
+    float: right;
+    height: 100px;
+    width: 100px;
+}

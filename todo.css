@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+body{
+    background: #7fe4e4;
+    padding: 80px 0 0 0;
+}
+.bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    cursor: auto;
+}
+.title{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 5;
+}
+.counts{
+    float: right;
+}
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 300;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-style: italic;
+    text-align: left;
+    position: absolute;
+    left: 30px;
+    top: -5px;
+    width: 1000px;
+    z-index:2;
+}
+.taskCountC{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    float: right;
+    right: 20px;
+    z-index: 5;
+}
+.taskCountA{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 20px;
+    z-index: 5;
+    line-height: 80px;
+}
+body,input,button{
+    font-family: "Montserrat";
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    z-index: 5;
+    box-shadow: 0px 2px 4px rgba(44,62,80,0.15);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(to right, #6666ff, #0099ff , #ff3399, #6666ff);
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 12s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+header input{
+    font-family: "Montserrat";
+    font-weight: 800px;
+    font-size: 40px;
+    text-indent: 10px;
+    float: left;
+    border-radius: 5px;
+    border: 0px;
+    height: 100px;
+    width: 100%;
+    top: 25px;
+    max-width: 100%;
+    box-shadow: none;
+    outline: none;
+    padding: 0 60px 0 0;
+    background-color:rgba(238, 238, 238, 0.137);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    color:rgb(24, 23, 23);
+    z-index: 2;
+    margin-top: 10px;
+}
+.headButt{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    border-radius: 50px;
+    border: 0px;
+    background: rgba(0, 162, 255, 0.411);
+    box-shadow: none;
+    outline: none;
+    background-image: url('todo_media/plus.png');
+    background-size: 100px 100px;
+    z-index: 2;
+}
+.headButt:hover{
+    filter: invert(100%) brightness(0.5) sepia(100%) hue-rotate(300deg);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .7);
+}
+.clearButt{
+    font-weight: bolder;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 165px;
+    right: 5px;
+    border-radius: 50px;
+    background: rgb(195, 195, 195);
+    opacity: 0.5;
+    z-index: 3;
+}
+.clearButt:hover{
+    filter: invert(100%) brightness(0.5) sepia(100%) hue-rotate(300deg);
+    box-shadow: 5px 5px 5px rgba(145, 92, 182, .7);
+}
+::placeholder{
+    color:white;
+}
+
+ul.list{
+    width: 100%;
+    float:left;
+    padding: 20px;
+}
+ul.list li{
+    color: rgb(0, 0, 0);
+    font-weight: 400px;
+    font-size: 40px;
+    text-indent: 20px;
+    width: 100%;
+    top: 170px;
+    position: relative;
+    float:left;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 10px 7px 5px rgba(49, 62, 75, 0.35);
+    margin-top: -45px;
+    line-height: 100px;
+    opacity: 0.9;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+ul.list button{
+    z-index: 2;
+    filter: sepia(100%);
+    border: none;
+    position: relative;
+    background-color: rgba(101, 170, 255, 0);
+}
+.trashButton{
+    float:right;
+    right: 20px;
+    top:80px;
+    background-size: 60px 70px;
+    width: 60px;
+    height: 70px;
+    background-image: url('todo_media/trash.png');
+}
+.trashButton:hover{
+    filter: invert(100%) brightness(0.5) sepia(100%) hue-rotate(300deg);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .7);
+    /* blur task when hover */
+}
+.checkButton{
+    background-image: url('todo_media/check.png');
+    background-size: 78px 80px;
+    width: 78px;
+    height: 80px;
+    border: none;
+    background-color: rgba(101, 170, 255, 0);
+    float:right;
+    right: 40px;
+    top: 80px;
+}
+.checkButton:hover{
+    filter: invert(100%) brightness(0.5) sepia(100%) hue-rotate(80deg);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .7);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.overlay {
+    display:block;/*none*/
+    position: fixed;
+
+    top: 0px;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--rgb), 1);
+}
