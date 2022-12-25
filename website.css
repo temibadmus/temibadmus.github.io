@@ -121,11 +121,11 @@ header{
     -o-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    background-image: linear-gradient(to right, #c3b1e1, #c3b1e1, #c3eefa, #c3eefa);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-
-    filter: invert(100%) brightness(0.5) sepia(100%) hue-rotate(300deg);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .7);
+    color: rgb(0, 0, 0);
+    /* filter: invert(100%) brightness(0.5) sepia(100%) hue-rotate(300deg); */
+    box-shadow: 0 5px 15px #c3b1e1;
 }
 .headTab:focus {
     outline: none;
