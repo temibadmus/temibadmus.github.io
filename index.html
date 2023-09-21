@@ -1,39 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Temi Badmus</title>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="website.css">
-    </head>
-    <body>     
-        <header>
-            <div class="logo">T</div>
-            <!-- target="_blank" -->
-            <form action="todo.html">
-                <button class="headTab" type="submit">TO-DO List</button>
-            </form>
-            <form action="quotes.html">
-                <button class="headTab">Quotes</button>
-            </form>
-            <!-- <form action="https://www.google.com/" target="_blank"> -->
-                <!-- <button class="headTab">temp</button> -->
-            <!-- </form> -->
-
-        </header>
-        <div class="intro">
-            <div class="intro_wrap">
-                <div class="intro_txt">Temi Badmus</div>
-                <div class="intro_job">Software Engineer</div>
-                <div class="intro_summary">
-                    Self-motivated undergraduate Computer Science junior with data analysis skills seeking internship opportunities
-                    as a software engineer, software developer or software analyst. 
-                </div>
-            </div>
-            <div class="pic">
-                <img class="selfie" src="website_media/selfie2.png"></img>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temi Badmus</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><button class="button" id="scrollAbout">About</button></li>
+                <li><button class="button" id="scrollProjects">Projects</button></li>
+                <li><button class="button" id="scrollContact">Contact</button></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="centered">
+            <h1>Temilolu Badmus</h1>
+            <h2>Software Engineer</h2>
         </div>
-        
-    </body>
+    </main>
+
+    <div class="bottom">
+        <h1 style="color: #6cceff00;">break</h1>
+        <table class="table">
+            <tr class="row">
+              <td class="cell" style="background-color: #000000;">About</td>
+              <td class="cell" style="background-color: #6cceff; color:#000000">
+                <h3>I am currently a senior in Computer Science, graduating from The University of Texas at Dallas in May 2024</h3>
+                <input type="image" src="selfie.jpg" width="350" height="auto">
+                <h3>Skills</h3>
+                <h4 style="margin-bottom: 50px;">C++, C#, Java, Python, MIPS, Haskell, R Studio, HTML, JavaScript, CSS, RESTful API, MySQL, GitHub(Version Control)</h4>
+                <h3>Hobbies</h3>
+                <h4 style="margin-bottom: 50px;"> I enjoy working out, listening to music, and watching tv.</h4>
+                <h3>Seeking Full-Time Software Engineering, Software Developer, or Software Analyst role for Summer/Fall 2024</h3>
+
+
+              </td>
+            </tr>
+            <tr class="row">
+                <td class="cell" style=" background-color: #6cceff;">
+                    <div class="projectDiv"> 
+                        <a href="quotes.html"><input class="buttonProject" type="image" src="steve.jpeg" alt="Submit" width="120" height="auto"></a>
+                        <div class="projectText" style="color: rgb(0, 0, 0);">Steve Jobs Quote Generator</div>
+                    </div>
+                    <div class="projectDiv"> 
+                        <a href="https://github.com/temibadmus/NBA_MVP"><input class="buttonProject" type="image" src="nba.png" alt="Submit" width="120" height="auto"></a>
+                        <div class="projectText" style="color: #ffffff;">NBA MVP Predictor</div>
+                    </div>
+                    <div class="projectDiv"> 
+                        <a href="https://github.com/temibadmus/tamuHack2022"><input class="buttonProject" type="image" src="instabook.jpg" alt="Submit" width="120" height="auto"></a>
+                        <div class="projectText" style="color: #ffffff;">InstaBook Campus Tour Booking</div>
+                    </div>
+                    <div class="projectDiv"> 
+                        <a href="todo.html"><input class="buttonProject" type="image" src="todo.jpg" alt="Submit" width="120" height="auto"></a>
+                        <div class="projectText" style="margin-left:40px; margin-top: 50px; color: #000000;">To-Do List</div>
+                    </div>
+                </td>
+                <td class="cell" style=" background-color: #000000;">Projects</td>
+            </tr>
+        </table>
+        <div class="contact">
+            <h1>Contact Information</h1>
+            <h3>E-mail:temibadmus1623@gmail.com</h3>
+            <h3>Mobile:832-266-2812</h3>
+            <a href="https://github.com/temibadmus"><input class="button" type="image" src="github.png" alt="Submit" width="120" height="auto"></a>
+            <a href="https://www.linkedin.com/in/temib/"><input class="button" type="image" src="linkedin.png" alt="Submit" width="100" height="auto"></a>
+        </div>
+    </div>
+</body>
 </html>
